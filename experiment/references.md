@@ -1,1 +1,1 @@
-### Link your references in here
+Book on Scanning electron microscopy and X-Ray microanalysis by J. I. Goldstein, Dale E. Newbury, J. R. Micheal, N. W. M. Ritchie, J. H. J. Scott, D. C. Joy
