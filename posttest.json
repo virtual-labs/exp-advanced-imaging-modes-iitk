@@ -1,0 +1,39 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which step in the SEM methodology involves optimizing the detection of backscattered electrons to provide compositional contrast in an image?",
+      "answers": {
+        "a": "Sample Preparation",
+        "b": "Initial SEM Setup",
+        "c": "Backscattered Electron Imaging (BSE)",
+        "d": "Energy-Dispersive X-ray Spectroscopy (EDS)"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the primary purpose of the Through-Lens Detection (TLD) mode in SEM?",
+      "answers": {
+        "a": "To detect phase distributions and compositional variations",
+        "b": "To enhance detection efficiency and reduce noise in imaging",
+        "c": "To analyze crystallographic orientation through diffraction patterns",
+        "d": "To perform elemental mapping and compositional analysis"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
