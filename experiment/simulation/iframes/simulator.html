@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main SEM</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/controls.css">
+    <link rel="stylesheet" href="../css/simulator.css">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/draggable.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+</head>
+
+<body>
+
+    <div id="dialogue-box-parent" style="
+      width: 100vw;height: 100vh; z-index: 999;
+      position: absolute; background-color: rgba(0, 0, 0, 0.8); display: block;">
+        <div class="dialogue-box">
+            <h1>WELCOME TO THE SCANNING ELECTRON MICROSCOPE SIMULATION</h1>
+            <h4 style="color: #16b639; font-style: italic">
+                Choose the language for instructions:
+            </h4>
+            <div style="display: flex;">
+                <button onclick="englishVoice(this)" style="background-color: green;">
+                    ENG
+                </button>
+                <button onclick="hindiVoice(this)" style="background-color: red;">
+                    HIN
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- experiment heading -->
+    <div class="mg card fluid-container mb-2">
+        <div class="header-bar p-2">
+            <h4 class="" style="color: #06402c;font-weight: 800;font-style: italic;display: inline-block;font-family: cursive;">Instructions :
+               
+            </h4>
+            <!-- instrucntion type box  -->
+
+            <div id="typer" style="display: inline-block;"></div>
+        </div>
+    </div>
+
+    <!-- the 3 base columns: 1-> adjustments   2-> sem internal    3-> image  -->
+
+    <div class="row mb-3 text-center">
+        <div class="border border-5 col-xl-3 themed-grid-col" style=" border-width: 0px!important;">
+
+            <!-- left controls/adjustments -->
+
+            <div class="remote-container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!-- switch on/off -->
+                        <div class="button-container">
+                            <div class="label-heading">Switch</div>
+                            <input id="toggle" class="toggle" type="checkbox" role="switch" name="toggle" value="on"
+                                onclick="handleToggle();">
+                            <label for="toggle" class="slot">
+                                <span class="slot__label">OFF</span>
+                                <span class="slot__label">ON</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <!-- SE AND BSE MODE  -->
+                        <div class="label-heading"> MODE </div>
+                        <div class="custom-checkbox">
+                            <input id="status" type="checkbox" name="status" disabled onclick="toggleMode();">
+
+                            <label for="status">
+                                <div class="status-switch" data-unchecked="SE" data-checked="BSE">
+                                </div>
+                            </label>
+                        </div>
+
+                    </div>
+                    +
+                </div>
+
+
+                <!-- Sample selection input with options -->
+                <div class="button-container">
+                    <div class="label-heading">Sample</div>
+                    <select class="button" id="sam" disabled onchange="changeSampleImage() ;">
+                        <option value="nanoparticles">WOOD</option>
+                        <option value="zebrafish">POLLEN</option>
+                        <option value="metal">ROCK</option>
+                        <option value="mineral">STEEL</option>
+                    </select>
+                </div>
+
+
+
+
+
+                <!-- silder for Vaccum selection  -->
+
+                <div class="slider-container row" style="margin-left: 0%;">
+                    <label id="acv">Vaccum Selection
+                        <span id="info" onclick="showInfo()">ℹ️</span>
+                    </label>
+                    <!-- <div class="row"> -->
+
+                    <div class="col-9">
+                        <input type="range" id="vaccum-selection" min="0" max="10" step="5" stevalue="0" disabled>
+                    </div>
+                    <div class="col-3">
+                        <button id="setvac" class="btn btn-sm btn-success w-100" disabled>Set</button>
+                    </div>
+
+                </div>
+
+
+                <!-- # Working Distance  -->
+                <div class="slider-container row" style="margin-left: 0%;">
+
+                    <label id="acv">Working Distance in (mm) </label>
+                    <div class="col-9">
+                        <input type="range" id="imageslider" min="0" max="5" step="1" value="0" disabled>
+                    </div>
+                    <div class="col-3">
+                        <button id="w-distance" class="btn btn-sm btn-success w-100" disabled="">Set</button>
+                    </div>
+
+                    <div class="voltage-labels" style="width: 74%;">
+                        <label for="voltage0">0</label>
+                        <label for="voltage5">5 </label>
+                        <label for="voltage10">10 </label>
+                        <label for="voltage15">15</label>
+                        <label for="voltage20">20</label>
+                    </div>
+                </div>
+
+                <!-- silder for Accelerating volatge  -->
+
+                <div class="slider-container row" style="margin-left: 0%;">
+                    <label id="acv">Accelerating Voltage (Kv)</label>
+                    <div class="col-9">
+                        <input type="range" id="voltageSlider" min="0" max="20" step="5" value="0" disabled>
+                    </div>
+                    <div class="col-3">
+                        <button id="a-vol" class="btn btn-sm btn-success w-100" disabled="">Set</button>
+                    </div>
+
+                    <div class="voltage-labels " style="width: 78%;">
+                        <label for="voltage0">0 kV</label>
+                        <label for="voltage5">5 kV</label>
+                        <label for="voltage10">10 kV</label>
+                        <label for="voltage15">15 kV</label>
+                        <label for="voltage20">20 kV</label>
+                    </div>
+                </div>
+
+                <!-- wave button  -->
+                <div class="button-container">
+                    <button id="on" class="but sm w-100 green" fdprocessedid="mvgb1o" disabled
+                        style="background-color: rgb(171 42 196);color: white ;border-radius: 45px;width: 12px;height: 31px;width: fit-content;padding: 0px;">Beam
+                        On</button>
+                </div>
+
+                <!-- brightness  -->
+                <div class="slider-container">
+
+                    <label id="acv">Brightness
+                        <span id="info" onclick="showInfo()">ℹ️</span>
+                    </label>
+                    <input type="range" id="Brightness" min="0" max="100" value="0" oninput="changeBrightness()"
+                        disabled>
+                </div>
+
+                <!-- Spot Size  -->
+                <div class="slider-container">
+
+                    <label id="acv">Spot Size 
+                        <span id="info" onclick="showInfo()">ℹ️</span>
+                    </label>
+                    <input type="range" id="Brightness" min="0" max="100" value="0" oninput="changeBrightness();" disabled>
+                        
+                </div>
+
+
+
+
+                <!-- aperture size -->
+                <div class="button-container">
+                    <div class="label-heading">Aperture Size</div>
+                    <select class="button">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+
+
+                <!-- Add more buttons as needed -->
+            </div>
+
+            <!-- end of left controls/adjustments -->
+        </div>
+        <div class="col-xl-4 themed-grid-col" id="adjust-machine">
+            <!-- simulation/machine -->
+            <!-- <img src="../images/bg/tem_back.png" alt="TEM back" width="400" height="600"> -->
+            <div id="sem-head"> SECONDRY ELECTRON MICROSCOPY MACHINE</div>
+
+            <div class="panel" style="position: relative;height: 69rem;">
+
+                <img data-id="9" src="../images/bg/SEM_BECK_T.png" class="part a" style=" top: -1%;
+                    width: 28rem;
+                    left: 46%;
+                    height: 37rem;" />
+
+                <!-- electron gun  -->
+                <div class="image-container">
+                    <img data-id="1" title="Gun" src="../images/parts/eg.png" class="part" id="electron_gun" />
+                    <div class="hover-text">Electron Gun
+
+                    </div>
+                </div>
+
+                <!-- # Anode  -->
+                <!-- <div class="image-hover" style="top: 3.6rem;right: 3.8rem;right: 1.8rem;">
+                    <img data-id="2" title="anode" src="../images/parts/anode.png" class="part" id="anode" />
+                    <div class="hover-text">Anode
+
+                    </div>
+                </div> -->
+
+                <div class="image-container">
+                    <img data-id="2" title="anode" src="../images/parts/objective_.png" class="part" id="anode" />
+                    <div class="hover-text">Anode
+
+                    </div>
+                </div>
+
+                <!-- condenser  -->
+                <div class="image-container">
+                    <img data-id="3" title="condenser_lens" src="../images/parts/condenser_aperture.png" class="part"
+                        id="condenser_lens" />
+                    <div class="hover-text">Condensor
+
+                    </div>
+                </div>
+
+                <!-- <img data-id="1" title="Gun" src="../images/parts/electron_gun1.png" class="part" id="electron_gun" /> -->
+                <!-- <img data-id="2" title="anode" src="../images/parts/anode.png" class="part" id="anode" /> -->
+                <!-- <img data-id="3" title="Sample" src="../images/parts/condenser_aperture.png" class="part"
+                    id="condenser_lens1" /> -->
+
+
+                <img data-id="5" title="coil" src="../images/parts/coil.png" class="part" id="coil" />
+
+                <img data-id="6" title="objective_aperture_lens" src="../images/parts/green.png" class="part"
+                    id="objective_aperture_lens" />
+                <img data-id="7" title="intermediate_lens" src="../images/parts/intermediate_lens.png" class="part"
+                    id="intermediate_lens" />
+                <!-- <img data-id="8" title="projector_lens" src="../images/parts/projector_lens.png" class="part" id="projector_lens"/> -->
+                <img data-id="4" title="specimen" src="../images/parts/specimen.png" class="part" id="specimen" />
+
+                <img data-id="9" title="fluorescent_screen" src="../images/parts/fluorescent_screen.png" class="part"
+                    id="fluorescent_screen" />
+                <img data-id="4" title="sample" src="../images/parts/wood.png" class="part" id="specimen1" />
+
+                <!-- <img data-id="10" title="sample_holder1" src="../images/parts/sample_holder1.png" class="part" id="sample_holder1"/> -->
+                <div id="dropzone" class="active" style="display: none;">
+                </div>
+
+                <!-- BEAM  -->
+
+
+                <canvas id="beam" width="15" height="530" style="
+                position: absolute;
+                top: 8%;
+                height: 38%;
+                left: 49%;
+                transform: translateX(-67%);
+              "></canvas>
+                <canvas id="beam2" width="256" height="80" style="
+              display: none;
+              position: absolute;
+              top: 81%;
+              left: 49%;
+              transform: translateX(-50%);
+              background: none;
+            "></canvas>
+                <!-- end of beam -->
+
+
+            </div>
+            <!-- end of simulation machine -->
+        </div>
+        <!-- output colm  -->
+        <div class="col-xl-5 themed-grid-col border border-5" id="output_div" style=" border-width: 0px!important;">
+            <!-- image formed output -->
+            <div id="out-img">
+                <div id="image-div">
+                    <img id="image" class="fade-image" src="../images/outputs/actulal-sem.png" alt="Image 1">
+                </div>
+                <!-- downlaod button image  -->
+                <img src="../images/outputs/downlaod.png" id="downloadButton" style="
+    width: 26%;">
+
+            </div>
+
+
+            <!-- end of image formed output -->
+
+            <!-- 
+                  
+                  <div class="alert alert-primary d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" style="height: 2rem;width:2rem" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                    <div>
+                      Put the sample on the sample holder below the TEM machine.
+                    </div>
+                  </div> -->
+
+
+            <!-- end of instructions code -->
+        </div>
+        <!-- draggable boxes  -->
+
+        <div id="draggable" class="ui-widget-content">
+            <p>
+
+                Adjusting the brightness in a scanning electron microscope (SEM) can impact image contrast, resolution,
+                and
+                charging effects. Higher brightness enhances contrast and resolution but can lead to charging and beam
+                damage on non-conductive samples. Careful adjustment is crucial to strike a balance between image
+                quality
+                and sample preservation. Operators should consider the sample's properties and imaging goals when
+                setting
+                SEM brightness.</p>
+            <button id="cutButton">X</button>
+        </div>
+        <!-- toast message box  -->
+        <div id="toast-wrapper" aria-live="polite" aria-atomic="true"
+            style="position:fixed; right:1rem; top: 1rem; z-index: 99999;">
+        </div>
+
+
+        <!-- box 2 working distance  -->
+        <!-- <div id="draggable1" class="ui-widget-content">
+        <p><ul>
+            <li><strong>Focus and Depth of Field:</strong> Working distance controls depth of field, affecting the range of in-focus depths.</li>
+            <li><strong>Sample Protection:</strong> Longer working distances reduce the risk of specimen damage by keeping the beam farther away.</li>
+            <li><strong>Secondary Electron Emission:</strong> It influences efficient collection of secondary electrons for image formation.</li>
+            <li><strong>Resolution and Magnification:</strong> Working distance impacts overall magnification and image resolution.</li>
+            <li><strong>Specimen Navigation:</strong> Operators use it to bring specific regions into focus without moving the specimen.</li>
+          </ul>
+          </p>
+        <button id="cutButton1">X</button>
+    </div> -->
+        <!-- output col end -->
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="../js/jquery.min.js"></script> -->
+    <!-- <script src="../js/popper.js"></script> -->
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+    <!-- <script src="../js/zoom.js"></script> -->
+    <!-- <script src="../js/jquery-ui.min.js"></script> -->
+    <script src="../js/main.js"></script>
+    <script src="../js/tasks.js"></script>
+    <script src="../js/output.js"></script>
+    <script>
+        var inp = $("#position :selected").val();
+        let i = 0;
+
+        function change() {
+            if (inp == 1) {
+                document.getElementById("dropzone").style.marginTop = "4%";
+            } else {
+                document.getElementById("dropzone").style.marginTop = "16%";
+            }
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

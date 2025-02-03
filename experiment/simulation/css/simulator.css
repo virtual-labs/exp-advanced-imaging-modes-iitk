@@ -1,0 +1,395 @@
+/* home background responsive css */
+/* exp heading */
+body {
+	padding-left: 8px;
+}
+
+/* aim */
+#aim {
+
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 24px;
+}
+
+.lead {
+	font-family: 'Quicksand';
+}
+
+.header-bar {
+	position: relative;
+	width: 100%;
+	min-width: 300px;
+	border: 10px solid transparent;
+	border-top: 10px solid#54a6ba;
+	border-left: 10px solid #54a6ba;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+#typer {
+	font-weight: 500;
+	font-size: 20px;
+	font-style: italic;
+	font-family: system-ui;
+	background: #272525;
+	color: #aee4fe;
+	/* color : #052507 ;  */
+	border-radius: 8px;
+	padding: 8px;
+}
+
+.header-bar>.logo {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: 10px;
+	transform: translateY(-50%);
+	color: rgba(211, 0, 0, 0.8);
+	font-family: 'Parisienne', cursive;
+	cursor: default;
+	user-select: none;
+}
+
+/* se and BSE button  */
+
+.custom-checkbox {
+	width: 185px;
+	height: 36px;
+	margin-left: 29%;
+}
+
+.custom-checkbox input#status {
+	display: none;
+}
+
+.custom-checkbox input#status+label {
+	height: 100%;
+	width: 100%;
+}
+
+.custom-checkbox input#status+label>.status-switch {
+	cursor: pointer;
+	width: 80%;
+	height: 100%;
+	position: relative;
+	background-color: #e22e1a;
+	color: white;
+	transition: all 0.1s ease;
+	padding: 3px;
+	border-radius: 7px;
+}
+
+.custom-checkbox input#status+label>.status-switch:before,
+.custom-checkbox input#status+label>.status-switch:after {
+	border-radius: 2px;
+	height: calc(100% - 6px);
+	width: calc(50% - 3px);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	justify-content: center;
+	transition: all 0.3s ease;
+}
+
+.custom-checkbox input#status+label>.status-switch:before {
+	background-color: #272525;
+	color: #aee4ff;
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+	left: 3px;
+	z-index: 10;
+	content: attr(data-unchecked);
+	font-weight: 800;
+	font-style: oblique;
+	font-family: system-ui;
+	border-radius: 7px;
+}
+
+.custom-checkbox input#status+label>.status-switch:after {
+	right: 0;
+	content: attr(data-checked);
+}
+
+.custom-checkbox input#status:checked+label>.status-switch {
+	background-color: rgb(80 202 27);
+}
+
+.custom-checkbox input#status:checked+label>.status-switch:after {
+	left: 0;
+	content: attr(data-unchecked);
+}
+
+.custom-checkbox input#status:checked+label>.status-switch:before {
+	color: #92dffe;
+	left: 50%;
+	content: attr(data-checked);
+}
+
+/* slider in control panel  */
+
+.slider-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+.slider-menu>li {
+	display: inline-flex;
+	padding: 14px;
+	margin-left: 2px;
+	font-family: 'Quicksand', sans-serif;
+	color: #43168a;
+	cursor: pointer;
+	transition: 0.3s linear all;
+	user-select: none;
+}
+
+.slider-menu>li:hover {
+	color: #ed9999;
+	box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+}
+
+.aeu-signature {
+	position: fixed;
+	top: 5px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 15px;
+	line-height: 30px;
+	background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 25px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.aeu-signature {
+	font-family: "Quicksand";
+}
+
+.aeu-signature>img {
+	height: 30px;
+}
+
+
+/* image slider  */
+
+#imageslider {
+	width: 99%;
+}
+
+/* Styles for the slider container */
+.slider-container {
+	/* display: flex; */
+	/* flex-direction: column; */
+	align-items: center;
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid #322f2f;
+	border-radius: 10px;
+	background-color: #1b1616;
+}
+
+/* Style for the slider label */
+.slider-label {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Style for the slider input */
+.slider-input {
+	width: 90%;
+}
+
+
+/* Style for individual voltage labels */
+.voltage-labels label {
+	font-size: 14px;
+	color: #99e5ee;
+	
+}
+
+
+
+
+
+
+
+
+/* components/parts css */
+#electron_gun {
+	top: 4%;
+    width: 5rem;
+    left: 49%;
+}
+
+
+#anode {
+    top: 8%;
+    width: 4rem;
+
+}
+
+#condenser_lens {
+    left: 48%;
+    top: 11%;
+    width: 8rem;
+}
+#specimen1{
+    left: 48%;
+    top: 45%;
+    width: 3rem;
+
+}
+#green{
+	left: 48%;
+    top: 16%;
+    width: 8rem;
+}
+
+#specimen {
+    top: 9%;
+    width: 17rem;
+    left: 47%;
+}
+
+#objective_aperture_lens {
+	top: 19%;
+    width: 6rem;
+	left: 47%;
+}
+
+#coil {
+    top: 19%;
+    width: 9rem;
+    left: 48%;
+
+}
+
+
+#intermediate_lens {
+	top: 25%;
+    width: 17rem;
+    left: 47%;
+}
+
+#projector_lens {
+	top: 65%;
+	width: 18rem;
+}
+
+#fluorescent_screen {
+    top: 41%;
+    width: 10rem;
+    left: 48%;
+}
+
+
+#sample_holder1 {
+	top: 83%;
+	width: 18rem;
+}
+
+.part {
+	position: absolute;
+	left: 48%;
+	transform: translateX(-50%);
+	transition: all 0.2s;
+}
+
+#adjust-machine{
+	background-color: #191616;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#sem-head{
+	color: white;
+    font-weight: 700;
+    color: wheat;
+    border-radius: 8px;
+    border: solid #655d5d;
+    /* width: fit-content; */
+    font-size: 20px;
+    margin: 2pxxx;
+    padding: 4px;
+    text-align: center;
+    margin-top: 1%;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    /* box-sizing: revert; */
+    margin-left: 5px;
+    box-shadow: blueviolet;
+}
+/* reponsive */
+@media (min-width: 700px) and (max-width: 1200px) {
+	#adjust-machine {
+		background-color: #191616;
+		padding-left: 362px;
+		padding-right: 345px;
+	}
+}
+
+
+.voltage-labels {
+	display: flex;
+	justify-content: space-between;
+	margin-top: -3px;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+}
+
+.slider-container {
+	margin: 3px auto;
+	width: 98%;
+}
+
+#voltageSlider {
+	width: 103%;
+}
+
+#acv {
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+
+}
+
+
+
+
+/* hover css text display */
+.image-container {
+	/* position: relative; */
+	display: inline-block;
+}
+
+.image-container img {
+	width: 100%;
+	/* transition: transform 0.3s ease; */
+}
+
+
+.image-container .hover-text {
+	position: absolute;
+	top: 33px;
+	left: 59%;
+	background-color: #f8f9fa;
+	color: rgb(181 8 8);
+	padding: 8px;
+	border-radius: 11px;
+	visibility: hidden;
+	transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.05, 1.13) 0s;
+	white-space: nowrap;
+}
+
+.image-container:hover .hover-text {
+	visibility: visible;
+}
+
+/* draggable box  */
+
