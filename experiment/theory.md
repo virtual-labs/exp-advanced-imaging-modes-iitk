@@ -6,11 +6,9 @@ Scanning Electron Microscopy (SEM) is a powerful tool used extensively in materi
 BSE is an SEM imaging mode that utilizes elastically scattered high-energy electrons that are backscattered from the sample. BSE imaging provides compositional contrast. The intensity of backscattered electrons is proportional to the atomic number of the elements in the sample. Heavier elements scatter more electrons resulting in brighter contrast in the image and lighter elements appear darker. BSE is widely used for identifying phase distributions in multiphase materials and examining compositional variations across a sample. It is also used for detecting inclusions or contaminants. BSE is also less sensitive to surface topography in comparison to secondary electron imaging.
 <br>
 
-<image src="images\Picture1.png">
-<br>
+<image src="images\Picture1.png"><br>
 
-**Through-Lens Detection (TLD)**
-<br>
+<b>Through-Lens Detection (TLD)</b><br>
 TLD is an SEM advanced technique using secondary and backscattered electrons collected through the electron column of the microscope. TLD enhances the detection efficiency and allows for the combination of different imaging modes. TLD uses a series of lenses to direct electrons toward the detector positioned along the optical axis of the SEM and allows simultaneous detection of SE, BSE and transmitted electrons. Thus, it is used for imaging of high-resolution imaging of surface topography and also provides depth information of the sample. It improves the quality of the imaging by reducing the noise and also enhances signal collection.
 <br>
 
