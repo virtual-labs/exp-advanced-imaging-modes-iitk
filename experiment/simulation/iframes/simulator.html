@@ -98,6 +98,7 @@
                 <div class="button-container">
                     <div class="label-heading">Sample</div>
                     <select class="button" id="sam" disabled onchange="changeSampleImage() ;">
+                        <option value="nanoparticles">Select Sample</option>
                         <option value="nanoparticles">WOOD</option>
                         <option value="zebrafish">POLLEN</option>
                         <option value="metal">ROCK</option>
@@ -109,10 +110,10 @@
 
 
 
-                <!-- silder for Vaccum selection  -->
+                <!-- silder for Vacuum selection  -->
 
                 <div class="slider-container row" style="margin-left: 0%;">
-                    <label id="acv">Vaccum Selection
+                    <label id="acv">Vacuum Selection
                         <span id="info" onclick="showInfo()">ℹ️</span>
                     </label>
                     <!-- <div class="row"> -->
@@ -150,7 +151,7 @@
                 <!-- silder for Accelerating volatge  -->
 
                 <div class="slider-container row" style="margin-left: 0%;">
-                    <label id="acv">Accelerating Voltage (Kv)</label>
+                    <label id="acv">Accelerating Voltage (kV)</label>
                     <div class="col-9">
                         <input type="range" id="voltageSlider" min="0" max="20" step="5" value="0" disabled>
                     </div>
