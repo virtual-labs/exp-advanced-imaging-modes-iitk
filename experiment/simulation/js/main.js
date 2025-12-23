@@ -131,7 +131,7 @@ function drawBeam() {
     if (beamy >= beamCanvas.height) {
         clearInterval(beamTimer);
         beamTimer = -1;
-        beamTimer2 = setInterval(drawBeam2, 100);
+        beamTimer2 = setInterval(drawBeam2, 2);
         // Get the selected option from a dropdown and switch between two images accordingly.
 
         const voltageSlider = document.getElementById('voltageSlider');
