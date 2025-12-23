@@ -7,7 +7,7 @@
     <title>Main SEM</title>
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+ 
     <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../css/controls.css">
     <link rel="stylesheet" href="../css/simulator.css">
@@ -77,11 +77,11 @@
 
                     </div>
 
-                    <div class="col-sm-4">
+             <div class="col-sm-4">
                         <!-- SE AND BSE MODE  -->
                         <div class="label-heading"> MODE </div>
                         <div class="custom-checkbox">
-                            <input id="status" type="checkbox" name="status" disabled onclick="toggleMode();">
+                            <input style="background-color: white;" id="status" type="checkbox" name="status" disabled onclick="toggleMode();">
 
                             <label for="status">
                                 <div class="status-switch" data-unchecked="SE" data-checked="BSE">
@@ -92,6 +92,8 @@
                     </div>
                     +
                 </div>
+
+
 
 
                 <!-- Sample selection input with options -->
@@ -113,7 +115,7 @@
                 <!-- silder for Vacuum selection  -->
 
                 <div class="slider-container row" style="margin-left: 0%;">
-                    <label id="acv">Vacuum Selection
+                    <label id="acv">Vacuum Selection in (Pa)
                         <span id="info" onclick="showInfo()">ℹ️</span>
                     </label>
                     <!-- <div class="row"> -->
@@ -175,25 +177,22 @@
                         On</button>
                 </div>
 
-                <!-- brightness  -->
-                <div class="slider-container">
+              <!-- Brightness -->
+<div class="slider-container">
+    <label style="color: white;">Brightness
+        <span onclick="showInfo()" style="cursor:pointer;">ℹ️</span>
+    </label>
+    <input type="range" id="Brightness" min="0" max="100" value="0" oninput="updateImage()" disabled>
+</div>
 
-                    <label id="acv">Brightness
-                        <span id="info" onclick="showInfo()">ℹ️</span>
-                    </label>
-                    <input type="range" id="Brightness" min="0" max="100" value="0" oninput="changeBrightness()"
-                        disabled>
-                </div>
+<!-- Spot Size -->
+<div class="slider-container">
+    <label style="color: white;">Spot Size
+        <span onclick="showInfo()" style="cursor:pointer;">ℹ️</span>
+    </label>
+    <input type="range" id="spotSize" min="0" max="100" value="0" oninput="updateImage()" disabled>
+</div>
 
-                <!-- Spot Size  -->
-                <div class="slider-container">
-
-                    <label id="acv">Spot Size 
-                        <span id="info" onclick="showInfo()">ℹ️</span>
-                    </label>
-                    <input type="range" id="Brightness" min="0" max="100" value="0" oninput="changeBrightness();" disabled>
-                        
-                </div>
 
 
 

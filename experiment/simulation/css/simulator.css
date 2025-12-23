@@ -54,10 +54,12 @@ body {
 	width: 185px;
 	height: 36px;
 	margin-left: 29%;
+
 }
 
 .custom-checkbox input#status {
 	display: none;
+	
 }
 
 .custom-checkbox input#status+label {
@@ -66,12 +68,13 @@ body {
 }
 
 .custom-checkbox input#status+label>.status-switch {
+	
 	cursor: pointer;
 	width: 80%;
 	height: 100%;
 	position: relative;
-	background-color: #e22e1a;
-	color: white;
+	background-color: white;
+	color: black;
 	transition: all 0.1s ease;
 	padding: 3px;
 	border-radius: 7px;
@@ -90,7 +93,7 @@ body {
 }
 
 .custom-checkbox input#status+label>.status-switch:before {
-	background-color: #272525;
+	background-color: green;
 	color: #aee4ff;
 	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
 	left: 3px;
@@ -108,7 +111,7 @@ body {
 }
 
 .custom-checkbox input#status:checked+label>.status-switch {
-	background-color: rgb(80 202 27);
+	background-color: white;
 }
 
 .custom-checkbox input#status:checked+label>.status-switch:after {

@@ -171,7 +171,6 @@ function toggleMode() {
     }
 }
 
-
 // switch on
 function strt() {
     $('#sam').prop("disabled", false);
@@ -328,7 +327,7 @@ $("#on").click(function () {
     }
 
     $("#Brightness").prop('disabled', false);
-
+  $("#spotSize").prop('disabled', false);
     // showToast("Image Formed ! Analyze it ");
     // $("#a-vol").prop("disabled", true);
     // $("#voltageSlider").prop("disabled", true);
@@ -365,17 +364,37 @@ slider.addEventListener("input", () => {
 });
 
 
-// brightness 
+let currentBrightness = 1;
+let currentSpotSize = 1;
 
-function changeBrightness() {
-    // Get the range input value
-    var brightnessValue = document.getElementById("Brightness").value;
+// List of images for Spot Size effect
+const spotImages = [
+    "../images/outputs/op1.png",
+    "../images/outputs/op2_SE.png",
+    "../images/outputs/op3.png"
+];
 
-    // Calculate the brightness value for the image
-    var brightness = brightnessValue / 50; // Divide by 100 to get a value between 0 and 1
+function updateImage() {
+    const brightnessValue = document.getElementById("Brightness").value;
+    const spotValue = document.getElementById("spotSize").value;
 
-    // Apply the brightness to the image
-    document.getElementById("image").style.filter = "brightness(" + brightness + ")";
+    currentBrightness = 1 + brightnessValue / 100;  // 1 to 2
+    currentSpotSize = 1 + spotValue / 20;           // scaling factor for pixelation
+
+    const img = document.getElementById("image");
+
+    // Apply brightness
+    img.style.filter = `brightness(${currentBrightness})`;
+
+    // Apply pixelated scaling
+    img.style.transform = `scale(${currentSpotSize})`;
+    img.style.transformOrigin = 'top left';
+    img.style.imageRendering = 'pixelated';
+
+    // Change image based on spot size
+    const segment = Math.floor((spotValue / 100) * spotImages.length); // 0,1,2
+    const index = Math.min(segment, spotImages.length - 1); // ensure valid index
+    img.src = spotImages[index];
 }
 
 
