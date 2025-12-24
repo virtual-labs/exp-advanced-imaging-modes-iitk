@@ -1,3 +1,5 @@
+**Select the preferred Language (English or Hindi)**
+
 <b>Step 1:</b> Power on the machine and allow the system to initialize.
 
 <b>Step 2:</b> By default, the machine operates in SE (Secondary Electron) mode. To switch modes, click the BSE (Backscattered Electron) button.
@@ -32,4 +34,5 @@
 
 <b> Energy-Dispersive X-ray Spectroscopy (EDS):<br></b>
 •	Insert the EDS detector into the SEM chamber for compositional analysis. Adjust the SEM’s beam energy to optimize X-ray generation (typically 15-20 kV). Perform elemental mapping by focusing the electron beam on the sample and collecting X-ray signals. Generate maps that reveal the distribution of elements across the sample surface, which can be combined with BSE or TLD images for comprehensive analysis.
+
 
