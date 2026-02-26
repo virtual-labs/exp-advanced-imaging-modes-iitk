@@ -19,5 +19,19 @@ SEM involves the use of Energy-Dispersive X-ray Spectroscopy (EDS) to generate m
 <br>
 
 <image src="images\Picture2.png">
-<b>Fig 2. </b>Both images were acquired using the same imaging mode but at different magnifications: one at 250× and the other at 500×.
+<b>Fig 2. </b>Both images were acquired using the same imaging mode but at different magnifications: one at 250× and the other at 500×.<br><br>
+<b>A compositional comparison of the bright and dark phases in the table below:</b><br>
+
+| Phase | Element | At.% |
+|-------|---------|-----:|
+| Bright Phase | Hf | 34.79 |
+| Bright Phase | Ti | 32.04 |
+| Bright Phase | Zr | 33.17 |
+| Dark Phase | Hf | 226.85 |
+| Dark Phase | Ti | 41.71 |
+| Dark Phase | Zr | 31.44 |
+
+
+
+
 
