@@ -7,6 +7,7 @@ BSE is an SEM imaging mode that utilizes elastically scattered high-energy elect
 <br>
 
 <image src="images\Picture1.png"><br>
+<b>Fig 1. </b> Equiatomic HfTiZr medium-entropy alloy<br>
 
 <b>Through-Lens Detection (TLD)</b><br>
 TLD is an SEM advanced technique using secondary and backscattered electrons collected through the electron column of the microscope. TLD enhances the detection efficiency and allows for the combination of different imaging modes. TLD uses a series of lenses to direct electrons toward the detector positioned along the optical axis of the SEM and allows simultaneous detection of SE, BSE and transmitted electrons. Thus, it is used for imaging of high-resolution imaging of surface topography and also provides depth information of the sample. It improves the quality of the imaging by reducing the noise and also enhances signal collection.
@@ -18,3 +19,19 @@ SEM involves the use of Energy-Dispersive X-ray Spectroscopy (EDS) to generate m
 <br>
 
 <image src="images\Picture2.png">
+<b>Fig 2. </b>Both images were acquired using the same imaging mode but at different magnifications: one at 250× and the other at 500×.<br><br>
+<b>A compositional comparison of the bright and dark phases in the table below:</b><br>
+
+| Phase | Element | At.% |
+|-------|---------|-----:|
+| Bright Phase | Hf | 34.79 |
+| Bright Phase | Ti | 32.04 |
+| Bright Phase | Zr | 33.17 |
+| Dark Phase | Hf | 226.85 |
+| Dark Phase | Ti | 41.71 |
+| Dark Phase | Zr | 31.44 |
+
+
+
+
+

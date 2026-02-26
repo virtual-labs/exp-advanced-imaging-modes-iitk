@@ -9,12 +9,6 @@
         "c": "Backscattered Electron Imaging (BSE)",
         "d": "Energy-Dispersive X-ray Spectroscopy (EDS)"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
@@ -26,14 +20,42 @@
         "c": "To analyze crystallographic orientation through diffraction patterns",
         "d": "To perform elemental mapping and compositional analysis"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "In SEM, why is backscattered electron (BSE) imaging particularly useful for compositional contrast?",
+      "answers": {
+        "a": "It is sensitive to surface roughness only",
+        "b": "It provides contrast based on differences in atomic number",
+        "c": "It enhances edge effects for topographical imaging",
+        "d": "It detects secondary electrons emitted from the surface"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "Which SEM imaging mode is best suited for improving signal collection efficiency at low working distances?",
+      "answers": {
+        "a": "Everhart–Thornley Secondary Electron Detector",
+        "b": "Backscattered Electron Detector",
+        "c": "Through-Lens Detection (TLD)",
+        "d": "Energy-Dispersive X-ray Spectroscopy (EDS)"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "What is the main advantage of performing multiple elemental mapping using EDS in SEM?",
+      "answers": {
+        "a": "It increases magnification without changing resolution",
+        "b": "It allows simultaneous visualization of spatial distribution of different elements",
+        "c": "It improves surface topography contrast",
+        "d": "It reduces charging effects in non-conductive samples"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
 }
+
