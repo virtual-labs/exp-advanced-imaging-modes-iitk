@@ -240,7 +240,7 @@ function changeSampleImage() {
     var imageSources = {
         "nanoparticles": "../images/parts/wood.png",
         "zebrafish": "../images/parts/pollen.png",
-        "metal": "../images/parts/rock.png",
+        "metal": "../images/parts/steel.png",
         "mineral": "../images/parts/steel.png"
     };
 
@@ -376,7 +376,8 @@ const spotImages = [
 
 function updateImage() {
     const brightnessValue = document.getElementById("Brightness").value;
-    const spotValue = document.getElementById("spotSize").value;
+    const spotSizeElement = document.getElementById("spotSize");
+    const spotValue = spotSizeElement ? spotSizeElement.value : 0;
 
     currentBrightness = 1 + brightnessValue / 100;  // 1 to 2
     currentSpotSize = 1 + spotValue / 20;           // scaling factor for pixelation
@@ -390,11 +391,6 @@ function updateImage() {
     img.style.transform = `scale(${currentSpotSize})`;
     img.style.transformOrigin = 'top left';
     img.style.imageRendering = 'pixelated';
-
-    // Change image based on spot size
-    const segment = Math.floor((spotValue / 100) * spotImages.length); // 0,1,2
-    const index = Math.min(segment, spotImages.length - 1); // ensure valid index
-    img.src = spotImages[index];
 }
 
 
