@@ -5,42 +5,43 @@
 // accerlating voltage output 
 
 
+function getFinalImageSource() {
+    const sampleValue = document.getElementById('sam').value;
+    const isBSE = document.getElementById('status').checked;
+    
+    if (sampleValue === 'nanoparticles') { // Brass
+        return isBSE ? '../SE and BSE Images/Brass/BSE/brass-BSD-01_mg_5kx.png' : '../SE and BSE Images/Brass/SE/brass--01_mg_5_kx.png';
+    } else if (sampleValue === 'zebrafish') { // Ceramic
+        return isBSE ? '../SE and BSE Images/Ceramic/BSE/Ceramic-BSE-5Kx Mag.png' : '../SE and BSE Images/Ceramic/SE/Ceramic-SE-5Kx Mag.png';
+    } else if (sampleValue === 'metal') { // Dual phase
+        return isBSE ? '../SE and BSE Images/Dual phase High entropy alloys/BSE.PNG' : '../SE and BSE Images/Dual phase High entropy alloys/SE.PNG';
+    }
+    return '';
+}
+
 function updateImageByVoltage() {
     const voltageSlider = document.getElementById('voltageSlider');
     const imageElement = document.getElementById('image');
     
     voltageSlider.addEventListener('input', () => {
         const sliderValue = voltageSlider.value;
-        const imageIndex = sliderValue / 5; // Assuming each step represents 5 kV
     
         $("#Brightness").prop("disabled", false);
-        const images = [
-            '', // Empty string for zero voltage (no image)
-            '../images/outputs/se_5kv.png',
-            '../images/outputs/se_10kv.png',
-            '../images/outputs/se_15kv.png',
-            '../images/outputs/se_20kv.png'
-        ];
     
-        if (imageIndex >= 0 && imageIndex < images.length) {
-            imageElement.src = images[imageIndex];
-        } else {
-          alert("OOps! You did not Set Accelerating Voltage");
-            // Handle the case where imageIndex is out of range
-            // You can choose to do nothing or display a default image
-            // For example: imageElement.src = 'default_image.png';
-            // or imageElement.src = '';
-        }
         if (sliderValue === "0") {
-          alert("Voltage is set to zero.");
+            alert("Voltage is set to zero.");
+            imageElement.src = '';
+            return;
         }
-  
+        
+        const imgSrc = getFinalImageSource();
+        if (imgSrc) {
+            imageElement.src = imgSrc;
+        } else {
+            alert("Please select a valid sample!");
+        }
     });
-  }
-  
-  // Call the function to set up the voltage slider event listener
-  
-//   updateImageByVoltage();
+}
   
   
 
@@ -137,32 +138,27 @@ function drawBeam() {
         const voltageSlider = document.getElementById('voltageSlider');
         const imageElement = document.getElementById('image');
       
-            const sliderValue = voltageSlider.value;
-            const imageIndex = sliderValue / 5; // Assuming each step represents 5 kV
+        const sliderValue = voltageSlider.value;
 
-            const images = [
-                '', // Empty string for zero voltage (no image)
-                '../images/outputs/se_5kv.png',
-                '../images/outputs/se_10kv.png',
-                '../images/outputs/se_15kv.png',
-                '../images/outputs/se_20kv.png'
-            ];
-        
-            if (imageIndex >= 0 && imageIndex < images.length) {
-                imageElement.src = images[imageIndex];
+        if (sliderValue === "0") {
+            alert("Voltage is set to zero.");
+            imageElement.src = '';
+        } else {
+            const imgSrc = getFinalImageSource();
+            if (imgSrc) {
+                imageElement.src = imgSrc;
             } else {
-              alert("OOps! You did not Set Accelerating Voltage");
-                // Handle the case where imageIndex is out of range
-                // You can choose to do nothing or display a default image
-                // For example: imageElement.src = 'default_image.png';
-                // or imageElement.src = '';
+                alert("Please select a valid sample!");
             }
-            if (sliderValue === "0") {
-              alert("Voltage is set to zero.");
-            }
+        }
          
-         updateImageByVoltage();
-        // updateImageByVoltage();
+        // Avoid calling updateImageByVoltage() here because it attaches multiple event listeners
+        // If it was already attached elsewhere, we don't need to do it again. If it wasn't, 
+        // we can attach it once:
+        if (!window.voltageListenerAttached) {
+            updateImageByVoltage();
+            window.voltageListenerAttached = true;
+        }
 
 
         
