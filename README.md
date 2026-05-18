@@ -21,3 +21,5 @@ Fill a brief description of this experiment here
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | Aman Kumar | Student | Computer Science | BU Jhansi | amancvn@gmail.com
+2 | Swati Mahto | Student | MSE  |  IIT Kanpur | mahtoswati7@gmail.com
+3 | Khushboo Singh | MSE |  Employee |  IIT Kanpur | skhushboo@iitk.ac.in
