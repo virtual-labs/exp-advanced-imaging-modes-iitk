@@ -1,0 +1,412 @@
+/* left controls*/
+.remote-container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.button {
+  background-color: #272525;
+  color: #90ebff;
+  border: none;
+  font-weight: 700;
+  font-style: cursive;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 22px;
+  width: 98%;
+  text-align: center;
+  cursor: pointer;
+}
+/* custom border remove from cols  */
+
+
+
+.button:hover {
+    background-color: #777;
+}
+
+/* Style for the button container */
+.button-container {
+    text-align: center;
+}
+
+/* Style for the label heading */
+.label-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Style for the button */
+.custom-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS for the vacuum selection */
+.vacuum-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.slider-label {
+    font-size: 16px;
+    color: white;
+}
+
+#vacuum-value{
+    color:white;
+}
+
+/* Style for the set button */
+.set-button {
+    background-color: #198d3b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+.set-button:hover {
+    background-color: #0056b3;
+}
+
+ /* CSS for the magnification selection */
+ .magnification-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.slider-label {
+    font-size: 16px;
+}
+
+/* Style for the set button */
+.set-button {
+    background-color: #0d8a1b !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+.set-button:hover {
+    background-color: #0056b3;
+}
+
+#magnification-value{
+    color:white;
+}
+
+/* middle controls */
+.remote-container-2 {
+    background-color: #ed9999;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* CSS for the ok layout */
+.btn {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 0;
+    text-align: center;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    margin: 5px;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+  }
+.btn.round {
+    border-radius: 100%;
+    position: relative;
+  }
+
+.btn.round.btn-big {
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
+  .btn.round.btn-big .btn-big-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1c1c1c;
+    box-sizing: content-box;
+    display: inline-block;
+    border: 0;
+    text-align: center;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #eee;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: inset 0 0 10px 0px rgba(0,0,0,0.5);
+  }
+  .btn-big:before,
+  .btn-big-inner:before,
+  .btn-big:after,
+  .btn-big-inner:after {
+    position: absolute;
+    font-family: FontAwesome;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 16px;
+    padding: 15px;
+    line-height: 10px;
+    cursor: pointer;
+  }
+  .btn-big:before {
+    content: '\f0d8';
+    top: -12%;
+    left: 25%;
+  }
+  .btn-big:after {
+    content: '\f0d7';
+    bottom: -10%;
+    left: 25%;
+  }
+  .btn-big-inner:before {
+    content: '\f0d9';
+    left: -75%;
+    top: -1px;
+  }
+  .btn-big-inner:after {
+    content: '\f0da';
+    right: -75%;
+    top: -1px;
+  }
+  .btn.round.stop {
+    float: right;
+  }
+  
+/* switch on toggle */
+.toggle, .toggle:before, .slot__label, .curtain {
+    transition-property: background-color, transform, visibility;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in, cubic-bezier(0.6,0.2,0.4,1.5), linear;
+  }
+  .toggle:before, .slot, .slot__label {
+    display: block;
+  }
+  .toggle:before, .curtain {
+    position: absolute;
+  }
+  .toggle:checked, .curtain {
+    background-color: #2b7f3a;
+  }
+  .toggle:focus {
+    outline: transparent;
+  }
+  .toggle {
+    border-radius: 0.75em;
+    box-shadow: 0 0 0 0.1em inset;
+    cursor: pointer;
+  background-color: red;
+    position: relative;
+    margin-right: 0.25em;
+    width: 3em;
+    height: 1.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .toggle:before {
+    background: currentColor;
+    border-radius: 50%;
+    content: "";
+    top: 0.2em;
+    left: 0.2em;
+    width: 1.1em;
+    height: 1.1em;
+  }
+  .toggle:checked:before {
+    transform: translateX(1.5em);
+  }
+  .toggle:checked ~ .slot .slot__label, .slot__label:nth-child(2) {
+    transform: translateY(-50%) scaleY(0);
+  }
+  .toggle:checked ~ .slot .slot__label:nth-child(2) {
+    transform: translateY(-100%) scaleY(1);
+  }
+  .toggle:checked ~ .curtain {
+    transform: scaleX(1);
+  }
+  .slot {
+    color: transparent;
+
+    letter-spacing: 0.1em;
+    line-height: 1;
+    overflow: hidden;
+    height: 1em;
+    text-indent: -0.9em;
+    -webkit-text-stroke: 0.05em #fff;
+  }
+  .slot__label {
+    transform-origin: 50% 0;
+  }
+  .slot__label:nth-child(2) {
+    transform-origin: 50% 100%;
+  }
+
+/* beam */
+
+/* remote responsiveness */
+@media (min-width: 0px) and (max-width: 420px) {
+  .remote-container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+
+
+/* vaccum  */
+
+.vacuum-container {
+  text-align: center;
+  padding: -6px;
+  background-color: #131111;
+  border: 1px solid #604545;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(159 146 146 / 20%);
+  margin: 0 auto;
+  width: 99%;
+}
+.slider-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#vacuum-slider {
+  width: 80%;
+}
+
+#vacuum-value {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.set-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.set-button:hover {
+  background-color: #0056b3;
+}
+
+/* brightness slider  */
+
+#Brightness{
+  width: 99%;
+}
+#vaccum-selection{
+  width: 99%;
+}
+
+
+
+
+/* icon  */
+
+#info-icon {
+  margin-left: 5px; /* Adjust the spacing as needed */
+  color: red; /* Change the color to red */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#imageslider {
+  width: 100%;
+}
+
+
+
+/* #dialogue box  */
+
+.text-center{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dialogue-box{
+  /* width: 60%;
+  height: 30%; */
+  border-radius: 8px;
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.606);
+  transition: 0.3s;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 9999; */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dialogue-box button {
+  padding: 0rem 1rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.606);
+  border-style: none;
+  /* background-color: green; */
+  color: white;
+}
