@@ -1,0 +1,61 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which step in the SEM methodology involves optimizing the detection of backscattered electrons to provide compositional contrast in an image?",
+      "answers": {
+        "a": "Sample Preparation",
+        "b": "Initial SEM Setup",
+        "c": "Backscattered Electron Imaging (BSE)",
+        "d": "Energy-Dispersive X-ray Spectroscopy (EDS)"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the primary purpose of the Through-Lens Detection (TLD) mode in SEM?",
+      "answers": {
+        "a": "To detect phase distributions and compositional variations",
+        "b": "To enhance detection efficiency and reduce noise in imaging",
+        "c": "To analyze crystallographic orientation through diffraction patterns",
+        "d": "To perform elemental mapping and compositional analysis"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "In SEM, why is backscattered electron (BSE) imaging particularly useful for compositional contrast?",
+      "answers": {
+        "a": "It is sensitive to surface roughness only",
+        "b": "It provides contrast based on differences in atomic number",
+        "c": "It enhances edge effects for topographical imaging",
+        "d": "It detects secondary electrons emitted from the surface"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "Which SEM imaging mode is best suited for improving signal collection efficiency at low working distances?",
+      "answers": {
+        "a": "Everhart–Thornley Secondary Electron Detector",
+        "b": "Backscattered Electron Detector",
+        "c": "Through-Lens Detection (TLD)",
+        "d": "Energy-Dispersive X-ray Spectroscopy (EDS)"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+     {
+      "question": "What is the main advantage of performing multiple elemental mapping using EDS in SEM?",
+      "answers": {
+        "a": "It increases magnification without changing resolution",
+        "b": "It allows simultaneous visualization of spatial distribution of different elements",
+        "c": "It improves surface topography contrast",
+        "d": "It reduces charging effects in non-conductive samples"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
+

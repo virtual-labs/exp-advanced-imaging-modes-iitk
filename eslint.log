@@ -1,0 +1,396 @@
+
+/home/runner/work/exp-advanced-imaging-modes-iitk/exp-advanced-imaging-modes-iitk/experiment/simulation/js/bootstrap.bundle.min.js
+  6:69     warning  'module' is not defined                                                    no-undef
+  6:115    warning  'define' is not defined                                                    no-undef
+  6:126    warning  'define' is not defined                                                    no-undef
+  6:22675  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  6:26531  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  6:26555  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  6:60459  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+
+/home/runner/work/exp-advanced-imaging-modes-iitk/exp-advanced-imaging-modes-iitk/experiment/simulation/js/home.js
+    1:5   warning  'text' is defined but never used                  no-unused-vars
+    4:5   warning  'matSelected' is assigned a value but never used  no-unused-vars
+    6:16  warning  '$' is not defined                                no-undef
+    7:14  warning  '$' is not defined                                no-undef
+    9:3   warning  'currentStep' is assigned a value but never used  no-unused-vars
+   10:3   warning  'contrast' is assigned a value but never used     no-unused-vars
+   11:3   warning  'brightness' is assigned a value but never used   no-unused-vars
+   12:3   warning  'vac' is assigned a value but never used          no-unused-vars
+   14:3   warning  'on' is assigned a value but never used           no-unused-vars
+   15:3   warning  'dropped' is assigned a value but never used      no-unused-vars
+   16:3   warning  'imgs' is assigned a value but never used         no-unused-vars
+   19:3   warning  'inp' is assigned a value but never used          no-unused-vars
+   40:10  warning  'toggleVoice' is defined but never used           no-unused-vars
+   69:10  warning  'toggleSwitch' is defined but never used          no-unused-vars
+   80:3   warning  '$' is not defined                                no-undef
+  116:3   warning  '$' is not defined                                no-undef
+  119:3   warning  '$' is not defined                                no-undef
+  123:1   warning  '$' is not defined                                no-undef
+  132:17  warning  '$' is not defined                                no-undef
+  133:18  warning  '$' is not defined                                no-undef
+  134:17  warning  '$' is not defined                                no-undef
+  137:3   warning  '$' is not defined                                no-undef
+  164:3   warning  '$' is not defined                                no-undef
+  172:21  warning  '$' is not defined                                no-undef
+  177:9   warning  'ac' is not defined                               no-undef
+  181:9   warning  'ac' is not defined                               no-undef
+  185:9   warning  'ac' is not defined                               no-undef
+  191:3   warning  '$' is not defined                                no-undef
+  203:11  warning  'mag' is not defined                              no-undef
+  207:11  warning  'mag' is not defined                              no-undef
+  211:11  warning  'mag' is not defined                              no-undef
+  215:11  warning  'mag' is not defined                              no-undef
+  219:11  warning  'mag' is not defined                              no-undef
+  223:11  warning  'mag' is not defined                              no-undef
+  227:11  warning  'mag' is not defined                              no-undef
+  231:11  warning  'mag' is not defined                              no-undef
+  235:11  warning  'mag' is not defined                              no-undef
+  239:11  warning  'mag' is not defined                              no-undef
+  243:11  warning  'mag' is not defined                              no-undef
+  251:3   warning  '$' is not defined                                no-undef
+  252:5   warning  '$' is not defined                                no-undef
+  263:5   warning  '$' is not defined                                no-undef
+  264:5   warning  '$' is not defined                                no-undef
+  265:5   warning  '$' is not defined                                no-undef
+  270:3   warning  '$' is not defined                                no-undef
+  280:5   warning  '$' is not defined                                no-undef
+  281:5   warning  '$' is not defined                                no-undef
+  282:5   warning  '$' is not defined                                no-undef
+  287:30  warning  'fx' is defined but never used                    no-unused-vars
+  288:11  warning  '$' is not defined                                no-undef
+  295:5   warning  '$' is not defined                                no-undef
+  296:5   warning  '$' is not defined                                no-undef
+  300:3   warning  '$' is not defined                                no-undef
+  301:10  warning  '$' is not defined                                no-undef
+  303:5   warning  '$' is not defined                                no-undef
+  304:5   warning  '$' is not defined                                no-undef
+  305:5   warning  '$' is not defined                                no-undef
+  316:3   warning  '$' is not defined                                no-undef
+  320:12  warning  '$' is not defined                                no-undef
+  323:5   warning  'url' is not defined                              no-undef
+  323:39  warning  'mag' is not defined                              no-undef
+  323:45  warning  'item' is not defined                             no-undef
+  325:5   warning  '$' is not defined                                no-undef
+  325:33  warning  'url' is not defined                              no-undef
+  326:5   warning  '$' is not defined                                no-undef
+  326:33  warning  'url' is not defined                              no-undef
+  328:5   warning  '$' is not defined                                no-undef
+  328:33  warning  'url' is not defined                              no-undef
+  329:5   warning  '$' is not defined                                no-undef
+  329:33  warning  'url' is not defined                              no-undef
+  331:5   warning  '$' is not defined                                no-undef
+  331:33  warning  'url' is not defined                              no-undef
+  332:5   warning  '$' is not defined                                no-undef
+  332:33  warning  'url' is not defined                              no-undef
+  336:3   warning  '$' is not defined                                no-undef
+  338:5   warning  '$' is not defined                                no-undef
+  342:3   warning  '$' is not defined                                no-undef
+  346:9   warning  '$' is not defined                                no-undef
+  348:7   warning  '$' is not defined                                no-undef
+  349:7   warning  '$' is not defined                                no-undef
+  364:10  warning  'change' is defined but never used                no-unused-vars
+  373:3   warning  '$' is not defined                                no-undef
+  375:3   warning  '$' is not defined                                no-undef
+  376:3   warning  '$' is not defined                                no-undef
+  451:9   warning  'item' is not defined                             no-undef
+  452:7   warning  '$' is not defined                                no-undef
+  453:7   warning  '$' is not defined                                no-undef
+  454:7   warning  '$' is not defined                                no-undef
+  456:16  warning  'item' is not defined                             no-undef
+  457:7   warning  '$' is not defined                                no-undef
+  458:7   warning  '$' is not defined                                no-undef
+  459:7   warning  '$' is not defined                                no-undef
+  461:16  warning  'item' is not defined                             no-undef
+  462:7   warning  '$' is not defined                                no-undef
+  463:7   warning  '$' is not defined                                no-undef
+  464:7   warning  '$' is not defined                                no-undef
+  522:5   warning  'item' is not defined                             no-undef
+  524:5   warning  '$' is not defined                                no-undef
+
+/home/runner/work/exp-advanced-imaging-modes-iitk/exp-advanced-imaging-modes-iitk/experiment/simulation/js/jquery-ui.min.js
+  6:54      warning  'define' is not defined                                          no-undef
+  6:65      warning  'define' is not defined                                          no-undef
+  6:88      warning  'jQuery' is not defined                                          no-undef
+  6:6116    warning  'i' is already defined                                           no-redeclare
+  6:6663    warning  't' is already defined                                           no-redeclare
+  6:6687    warning  's' is already defined                                           no-redeclare
+  6:8011    warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:8645    warning  Unnecessary escape character: \+                                 no-useless-escape
+  6:8647    warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:9207    warning  'e' is already defined                                           no-redeclare
+  6:12980   warning  'i' is already defined                                           no-redeclare
+  6:13048   warning  'a' is already defined                                           no-redeclare
+  6:13466   warning  'i' is already defined                                           no-redeclare
+  6:13536   warning  'a' is already defined                                           no-redeclare
+  6:14407   warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:14600   warning  Unnecessary escape character: \%                                 no-useless-escape
+  6:14624   warning  Unnecessary escape character: \%                                 no-useless-escape
+  6:14648   warning  Unnecessary escape character: \%                                 no-useless-escape
+  6:15177   warning  Unnecessary escape character: \%                                 no-useless-escape
+  6:15201   warning  Unnecessary escape character: \%                                 no-useless-escape
+  6:16040   warning  'i' is already defined                                           no-redeclare
+  6:16056   warning  'e' is already defined                                           no-redeclare
+  6:17687   warning  't' is already defined                                           no-redeclare
+  6:18921   warning  't' is already defined                                           no-redeclare
+  6:18928   warning  'i' is already defined                                           no-redeclare
+  6:18995   warning  'l' is already defined                                           no-redeclare
+  6:19184   warning  't' is already defined                                           no-redeclare
+  6:19191   warning  'i' is already defined                                           no-redeclare
+  6:19215   warning  's' is already defined                                           no-redeclare
+  6:20299   warning  Empty block statement                                            no-empty
+  6:20390   warning  Empty block statement                                            no-empty
+  6:22153   warning  'e' is already defined                                           no-redeclare
+  6:22171   warning  't' is already defined                                           no-redeclare
+  6:26152   warning  'e' is already defined                                           no-redeclare
+  6:29745   warning  'o' is already defined                                           no-redeclare
+  6:29758   warning  'o' is already defined                                           no-redeclare
+  6:29832   warning  's' is already defined                                           no-redeclare
+  6:31818   warning  'o' is already defined                                           no-redeclare
+  6:31924   warning  't' is already defined                                           no-redeclare
+  6:32451   warning  'o' is already defined                                           no-redeclare
+  6:32471   warning  'n' is already defined                                           no-redeclare
+  6:34280   warning  Redundant double negation                                        no-extra-boolean-cast
+  6:34463   warning  's' is already defined                                           no-redeclare
+  6:36629   warning  'e' is already defined                                           no-redeclare
+  6:37339   warning  's' is already defined                                           no-redeclare
+  6:37414   warning  's' is already defined                                           no-redeclare
+  6:37936   warning  's' is already defined                                           no-redeclare
+  6:38353   warning  'n' is already defined                                           no-redeclare
+  6:40827   warning  Unexpected control character(s) in regular expression: \x1f      no-control-regex
+  6:41839   warning  't' is already defined                                           no-redeclare
+  6:48527   warning  'a' is already defined                                           no-redeclare
+  6:50030   warning  'h' is already defined                                           no-redeclare
+  6:60571   warning  't' is already defined                                           no-redeclare
+  6:60585   warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:60587   warning  Unnecessary escape character: \[                                 no-useless-escape
+  6:60602   warning  Unnecessary escape character: \^                                 no-useless-escape
+  6:61247   warning  't' is already defined                                           no-redeclare
+  6:68295   warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:68297   warning  Unnecessary escape character: \[                                 no-useless-escape
+  6:68312   warning  Unnecessary escape character: \^                                 no-useless-escape
+  6:72230   warning  'e' is already defined                                           no-redeclare
+  6:78639   warning  't' is already defined                                           no-redeclare
+  6:82269   warning  't' is already defined                                           no-redeclare
+  6:86471   warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:93412   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:95505   warning  Empty block statement                                            no-empty
+  6:95932   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:100367  warning  't' is already defined                                           no-redeclare
+  6:100898  warning  't' is already defined                                           no-redeclare
+  6:101523  warning  't' is already defined                                           no-redeclare
+  6:101627  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:102558  warning  'r' is already defined                                           no-redeclare
+  6:102956  warning  'e' is already defined                                           no-redeclare
+  6:103005  warning  'e' is already defined                                           no-redeclare
+  6:103051  warning  'e' is already defined                                           no-redeclare
+  6:103188  warning  'e' is already defined                                           no-redeclare
+  6:106897  warning  't' is already defined                                           no-redeclare
+  6:107060  warning  Empty block statement                                            no-empty
+  6:107195  warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:107978  warning  'e' is already defined                                           no-redeclare
+  6:109571  warning  'A' is already defined                                           no-redeclare
+  6:115683  warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:115732  warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:116346  warning  'e' is already defined                                           no-redeclare
+  6:116412  warning  'e' is already defined                                           no-redeclare
+  6:116697  warning  't' is already defined                                           no-redeclare
+  6:116728  warning  'e' is already defined                                           no-redeclare
+  6:117328  warning  'n' is already defined                                           no-redeclare
+  6:117727  warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:117757  warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:127649  warning  't' is already defined                                           no-redeclare
+  6:131503  warning  't' is already defined                                           no-redeclare
+  6:136449  warning  'i' is already defined                                           no-redeclare
+  6:140388  warning  'i' is already defined                                           no-redeclare
+  6:140400  warning  'i' is already defined                                           no-redeclare
+  6:141535  warning  'e' is already defined                                           no-redeclare
+  6:141594  warning  Empty block statement                                            no-empty
+  6:146995  warning  'e' is already defined                                           no-redeclare
+  6:147014  warning  'i' is already defined                                           no-redeclare
+  6:150381  warning  'i' is already defined                                           no-redeclare
+  6:153296  warning  'n' is already defined                                           no-redeclare
+  6:153344  warning  'a' is already defined                                           no-redeclare
+  6:153428  warning  'o' is already defined                                           no-redeclare
+  6:154993  warning  't' is already defined                                           no-redeclare
+  6:156478  warning  'o' is already defined                                           no-redeclare
+  6:158703  warning  's' is already defined                                           no-redeclare
+  6:162155  warning  's' is already defined                                           no-redeclare
+  6:167073  warning  't' is already defined                                           no-redeclare
+  6:167677  warning  'i' is already defined                                           no-redeclare
+  6:171352  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:180917  warning  'e' is already defined                                           no-redeclare
+  6:182391  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:196734  warning  'e' is already defined                                           no-redeclare
+  6:197198  warning  't' is already defined                                           no-redeclare
+  6:197431  warning  't' is already defined                                           no-redeclare
+  6:200665  warning  't' is already defined                                           no-redeclare
+  6:201123  warning  't' is already defined                                           no-redeclare
+  6:212448  warning  Unnecessary escape character: \-                                 no-useless-escape
+  6:212974  warning  'h' is already defined                                           no-redeclare
+  6:213014  warning  'c' is already defined                                           no-redeclare
+  6:213554  warning  't' is already defined                                           no-redeclare
+  6:214049  warning  't' is already defined                                           no-redeclare
+  6:219348  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:220595  warning  't' is already defined                                           no-redeclare
+  6:224442  warning  't' is already defined                                           no-redeclare
+  6:233581  warning  't' is already defined                                           no-redeclare
+  6:234834  warning  'Globalize' is not defined                                       no-undef
+  6:234986  warning  'Globalize' is not defined                                       no-undef
+  6:236919  warning  Empty block statement                                            no-empty
+  6:236957  warning  Empty block statement                                            no-empty
+  6:239909  warning  Unnecessary escape character: \/                                 no-useless-escape
+  6:239918  warning  Unnecessary escape character: \[                                 no-useless-escape
+  6:239922  warning  Unnecessary escape character: \^                                 no-useless-escape
+  6:242797  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:244278  warning  'i' is already defined                                           no-redeclare
+  6:245599  warning  't' is already defined                                           no-redeclare
+  6:247228  warning  't' is already defined                                           no-redeclare
+  6:248706  warning  'e' is already defined                                           no-redeclare
+  6:248776  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:250874  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  6:253482  warning  'e' is already defined                                           no-redeclare
+
+/home/runner/work/exp-advanced-imaging-modes-iitk/exp-advanced-imaging-modes-iitk/experiment/simulation/js/main.js
+  29:9  warning  '$' is not defined  no-undef
+
+/home/runner/work/exp-advanced-imaging-modes-iitk/exp-advanced-imaging-modes-iitk/experiment/simulation/js/simulator.js
+    1:5   warning  'text' is defined but never used                          no-unused-vars
+    4:5   warning  'matSelected' is assigned a value but never used          no-unused-vars
+    5:27  warning  '$' is not defined                                        no-undef
+    6:16  warning  '$' is not defined                                        no-undef
+    8:5   warning  'currentStep' is assigned a value but never used          no-unused-vars
+    9:5   warning  'contrast' is assigned a value but never used             no-unused-vars
+   10:5   warning  'brightness' is assigned a value but never used           no-unused-vars
+   11:5   warning  'vac' is assigned a value but never used                  no-unused-vars
+   12:5   warning  'av' is assigned a value but never used                   no-unused-vars
+   13:5   warning  'on' is assigned a value but never used                   no-unused-vars
+   14:5   warning  'dropped' is assigned a value but never used              no-unused-vars
+   15:5   warning  'imgs' is assigned a value but never used                 no-unused-vars
+   17:5   warning  'removeButtonclicked' is assigned a value but never used  no-unused-vars
+   18:5   warning  'spot_val' is assigned a value but never used             no-unused-vars
+   19:5   warning  'inp' is assigned a value but never used                  no-unused-vars
+   40:10  warning  'toggleVoice' is defined but never used                   no-unused-vars
+   69:10  warning  'toggleSwitch' is defined but never used                  no-unused-vars
+   80:5   warning  '$' is not defined                                        no-undef
+   82:9   warning  '$' is not defined                                        no-undef
+   85:9   warning  '$' is not defined                                        no-undef
+   85:54  warning  'e' is defined but never used                             no-unused-vars
+   86:9   warning  '$' is not defined                                        no-undef
+   95:5   warning  '$' is not defined                                        no-undef
+   97:9   warning  '$' is not defined                                        no-undef
+  100:9   warning  '$' is not defined                                        no-undef
+  100:43  warning  'e' is defined but never used                             no-unused-vars
+  101:9   warning  '$' is not defined                                        no-undef
+  114:17  warning  '$' is not defined                                        no-undef
+  119:13  warning  '$' is not defined                                        no-undef
+  120:13  warning  '$' is not defined                                        no-undef
+  166:5   warning  '$' is not defined                                        no-undef
+  169:5   warning  '$' is not defined                                        no-undef
+  173:1   warning  '$' is not defined                                        no-undef
+  184:20  warning  '$' is not defined                                        no-undef
+  185:19  warning  '$' is not defined                                        no-undef
+  188:5   warning  '$' is not defined                                        no-undef
+  197:27  warning  '$' is not defined                                        no-undef
+  202:17  warning  'ac' is not defined                                       no-undef
+  206:17  warning  'ac' is not defined                                       no-undef
+  212:5   warning  '$' is not defined                                        no-undef
+  224:21  warning  'mag' is not defined                                      no-undef
+  229:21  warning  'mag' is not defined                                      no-undef
+  234:21  warning  'mag' is not defined                                      no-undef
+  239:21  warning  'mag' is not defined                                      no-undef
+  248:5   warning  '$' is not defined                                        no-undef
+  249:9   warning  '$' is not defined                                        no-undef
+  259:9   warning  '$' is not defined                                        no-undef
+  260:9   warning  '$' is not defined                                        no-undef
+  264:5   warning  '$' is not defined                                        no-undef
+  266:14  warning  '$' is not defined                                        no-undef
+  276:9   warning  '$' is not defined                                        no-undef
+  282:5   warning  '$' is not defined                                        no-undef
+  294:16  warning  '$' is not defined                                        no-undef
+  297:9   warning  'url' is not defined                                      no-undef
+  297:38  warning  'mag' is not defined                                      no-undef
+  297:44  warning  'item' is not defined                                     no-undef
+  305:18  warning  'url' is not defined                                      no-undef
+  308:3   warning  '$' is not defined                                        no-undef
+  308:30  warning  'url' is not defined                                      no-undef
+  309:3   warning  '$' is not defined                                        no-undef
+  309:31  warning  'url' is not defined                                      no-undef
+  405:9   warning  '$' is not defined                                        no-undef
+  407:9   warning  '$' is not defined                                        no-undef
+  410:9   warning  '$' is not defined                                        no-undef
+  413:13  warning  'item' is not defined                                     no-undef
+  414:11  warning  '$' is not defined                                        no-undef
+  454:5   warning  '$' is not defined                                        no-undef
+  458:5   warning  '$' is not defined                                        no-undef
+  462:5   warning  '$' is not defined                                        no-undef
+  467:9   warning  '$' is not defined                                        no-undef
+  469:9   warning  '$' is not defined                                        no-undef
+  471:9   warning  'item' is not defined                                     no-undef
+  487:7   warning  'image_tem' is assigned a value but never used            no-unused-vars
+  555:10  warning  'rangeSlide' is defined but never used                    no-unused-vars
+  599:3   warning  '$' is not defined                                        no-undef
+  600:3   warning  '$' is not defined                                        no-undef
+
+/home/runner/work/exp-advanced-imaging-modes-iitk/exp-advanced-imaging-modes-iitk/experiment/simulation/js/tasks.js
+   22:5   warning  'text' is defined but never used                          no-unused-vars
+   25:5   warning  'matSelected' is assigned a value but never used          no-unused-vars
+   27:18  warning  '$' is not defined                                        no-undef
+   28:5   warning  'tWrapper' is assigned a value but never used             no-unused-vars
+   28:16  warning  '$' is not defined                                        no-undef
+   29:5   warning  'ti' is assigned a value but never used                   no-unused-vars
+   30:5   warning  'currentStep' is assigned a value but never used          no-unused-vars
+   31:5   warning  'contrast' is assigned a value but never used             no-unused-vars
+   32:5   warning  'brightness' is assigned a value but never used           no-unused-vars
+   33:5   warning  'vac' is assigned a value but never used                  no-unused-vars
+   34:5   warning  'av' is assigned a value but never used                   no-unused-vars
+   35:5   warning  'on' is assigned a value but never used                   no-unused-vars
+   36:5   warning  'dropped' is assigned a value but never used              no-unused-vars
+   37:5   warning  'imgs' is assigned a value but never used                 no-unused-vars
+   38:5   warning  'mode' is assigned a value but never used                 no-unused-vars
+   39:5   warning  'removeButtonclicked' is assigned a value but never used  no-unused-vars
+   40:5   warning  'inp' is assigned a value but never used                  no-unused-vars
+   42:5   warning  'isImageYDropped' is assigned a value but never used      no-unused-vars
+   67:10  warning  'hindiVoice' is defined but never used                    no-unused-vars
+   67:21  warning  'btn' is defined but never used                           no-unused-vars
+   73:10  warning  'englishVoice' is defined but never used                  no-unused-vars
+   73:23  warning  'btn' is defined but never used                           no-unused-vars
+  123:10  warning  'handleToggle' is defined but never used                  no-unused-vars
+  129:9   warning  'showToast' is not defined                                no-undef
+  143:10  warning  'toggleMode' is defined but never used                    no-unused-vars
+  176:5   warning  '$' is not defined                                        no-undef
+  178:5   warning  '$' is not defined                                        no-undef
+  208:1   warning  '$' is not defined                                        no-undef
+  224:10  warning  'changeSampleImage' is defined but never used             no-unused-vars
+  249:5   warning  '$' is not defined                                        no-undef
+  250:5   warning  '$' is not defined                                        no-undef
+  255:1   warning  '$' is not defined                                        no-undef
+  257:5   warning  '$' is not defined                                        no-undef
+  258:5   warning  '$' is not defined                                        no-undef
+  269:5   warning  '$' is not defined                                        no-undef
+  276:1   warning  '$' is not defined                                        no-undef
+  286:5   warning  '$' is not defined                                        no-undef
+  287:5   warning  '$' is not defined                                        no-undef
+  288:5   warning  '$' is not defined                                        no-undef
+  290:5   warning  '$' is not defined                                        no-undef
+  291:5   warning  '$' is not defined                                        no-undef
+  292:5   warning  'showToast' is not defined                                no-undef
+  298:1   warning  '$' is not defined                                        no-undef
+  308:5   warning  '$' is not defined                                        no-undef
+  311:5   warning  '$' is not defined                                        no-undef
+  312:5   warning  '$' is not defined                                        no-undef
+  317:1   warning  '$' is not defined                                        no-undef
+  329:5   warning  '$' is not defined                                        no-undef
+  330:3   warning  '$' is not defined                                        no-undef
+  341:1   warning  '$' is not defined                                        no-undef
+  342:5   warning  '$' is not defined                                        no-undef
+  343:9   warning  '$' is not defined                                        no-undef
+  346:5   warning  '$' is not defined                                        no-undef
+  347:9   warning  '$' is not defined                                        no-undef
+  350:5   warning  '$' is not defined                                        no-undef
+  371:7   warning  'spotImages' is assigned a value but never used           no-unused-vars
+  377:10  warning  'updateImage' is defined but never used                   no-unused-vars
+
+✖ 380 problems (0 errors, 380 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

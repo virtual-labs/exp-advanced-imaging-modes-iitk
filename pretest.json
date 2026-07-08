@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the primary function of Scanning Electron Microscopy (SEM) in materials science?",
+      "answers": {
+        "a": "To measure magnetic properties",
+        "b": "To perform chemical reactions",
+        "c": "To provide high-resolution imaging and analysis of sample surfaces and microstructures",
+        "d": "To assess thermal conductivity"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which SEM imaging mode utilizes elastically scattered high-energy electrons to provide compositional contrast?",
+      "answers": {
+        "a": "Through-Lens Detection (TLD)",
+        "b": "Backscattered Electron Imaging (BSE)",
+        "c": "Electron Backscatter Diffraction (EBSD)",
+        "d": "Secondary Electron Imaging (SEI)"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In Backscattered Electron Imaging (BSE), what causes certain areas of the image to appear brighter?",
+      "answers": {
+        "a": "Higher surface roughness",
+        "b": "Higher electron beam energy",
+        "c": "Higher atomic number elements",
+        "d": "Lower atomic number elements"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the advantage of Through-Lens Detection (TLD) in SEM?",
+      "answers": {
+        "a": "It only detects backscattered electrons.",
+        "b": "It enhances detection efficiency and allows for simultaneous detection of SE, BSE, and transmitted electrons.",
+        "c": "It detects X-rays emitted from the sample.",
+        "d": "It provides information solely on crystallographic orientation."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How does Energy-Dispersive X-ray Spectroscopy (EDS) contribute to SEM analysis?",
+      "answers": {
+        "a": "By detecting the magnetic properties of the sample",
+        "b": "By generating maps that show the distribution of different elements across the sample surface",
+        "c": "By capturing high-resolution images of surface topography",
+        "d": "By determining the grain size of polycrystalline materials"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does SEM stand for in the context of materials science?",
+      "answers": {
+        "a": "Scanning Electron Microscopy",
+        "b": "Surface Element Mapping",
+        "c": "Structural Energy Mapping",
+        "d": "Secondary Electron Microscopy"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
